@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<div class="cntainer">
+		<div class="parent-div">
+			<form>
+				<div class="data">
+					<input type="text" name="op" class="output" disabled>
+					
+				</div>
+				<div>
+					<input type="button" name="ac" value="AC" onclick="op.value = ' '" class="org">
+					<input type="button" name="c" value="C" onclick="op.value = op.value.slice(0,-1)" class="org">
+					<input type="button" name="operator" value="/" onclick="op.value +='/'">
+					<input type="button" name="operator" value="%" onclick="op.value +='%'">
+				</div>
+			</form>
+			
+		</div>
+		
+	</div>
