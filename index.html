@@ -10,22 +10,24 @@
 		.container{
 			height: 100vh;
 			width: 100%;
-			background-image: url("");
+			background-image: url("https://png.pngtree.com/background/20210712/original/pngtree-hand-drawn-dialog-hand-account-style-education-background-picture-image_1178882.jpg");
 			position: fixed;
 			top: 0px;
 			left: 0px;
 			display: flex;
 			align-items: center;
 			justify-content: center;
-
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
 		.parent-div{
-			height: 550px;
-			width: 375px;
+			height: 480px;
+			width: 373px;
 			background-color: white;
 			border-radius: 50px;
-			box-shadow: 0px 0px 40px black;
-			padding: 30px;
+			box-shadow: 0px 0px 5px black;
+			padding: 24px;
+			background-color: #F3D0D7;
 		}
 		.output{
 			height: 75px;
@@ -35,24 +37,34 @@
 			padding: 0px 20px;
 		}
 		input{
-			height: 80px;
+			height:73px;
 			width: 80px;
 			margin: 5px;
 			border-radius: 35px;
-			background-color: grey;
+			background-color: #B5C0D0;
 			border:none;
-			color: floralwhite;
 			font-size: 20px;
 			font-family: Arial Black;
 		}
 		input:hover{
 			cursor: pointer;
 		}
-		input[name="operator"],.org{
-			background-color: orange;
+		input[name="operator"]{
+			background-color: #A5DD9B;
+		}
+		.c{
+				background-color: 	#dd2d00;
+		}
+		.ac{
+			background-color: #49a109;
 		}
 		.eql{
 			width: 170px;
+		}
+		input:hover{
+			background-color: white;
+            border: 1px solid black;
+            
 		}
 	</style>
 </head>
@@ -66,8 +78,8 @@
 					
 				</div>
 				<div>
-					<input type="button" name="ac" value="AC" onclick="op.value = ' '" class="org">
-					<input type="button" name="c" value="C" onclick="op.value = op.value.slice(0,-1)" class="org">
+					<input type="button" name="ac" value="AC" onclick="op.value = ' '" class="ac">
+					<input type="button" name="c" value="C" onclick="op.value = op.value.slice(0,-1)" class="c">
 					<input type="button" name="operator" value="/" onclick="op.value +='/'">
 					<input type="button" name="operator" value="%" onclick="op.value +='%'">
 				</div>
